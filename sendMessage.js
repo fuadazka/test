@@ -1,1 +1,13 @@
-"var data = {\n    \"chat_id\" : msg.chat.id,\n    \"text\"  : \"hay Kamu\",\n    \"parse_mode\" : \"HTML\",\n    \"reply_markup\" : {\n        \"inline_keyboard\" : [\n            [\n                { \"text\": \"Google\", \"url\": \"https://www.google.com\" },\n            ],\n        ]\n    }\n};\ntg.request(\"sendMessage\", data);"
+var data = {
+    "chat_id" : msg.chat.id,
+    "text"  : "hay Kamu",
+    "parse_mode" : "HTML",
+    "reply_markup" : {
+        "inline_keyboard" : [
+            [
+                { "text": "Google", "url": "https://www.google.com" },
+            ],
+        ]
+    }
+};
+tg.request("sendMessage", data);
